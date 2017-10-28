@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Seon Mi | Portfolio</title>
+    <meta name="description" content="Seon Mi Cho's portfolio. This was a Midterm project for Programming Interactive Media 2017-Fall." />
+    <meta name="keywords"  content="portfolio, ux, ui, html, css, programming interactive media, midterm" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="ALL" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="Mid20171027.css" />    
+</head>
+
+<body>
+
+<!-- header : menu bar -->    
+<header>
+    <div class="header-wrapper">
+        <h1 class="header-main">
+            <a href="index.html">Seon Mi Cho</a>
+        </h1>
+        <br/><br/>
+        <ul class="header-menu">
+            <li><a href="index.html#about">About</a></li>
+            <li class="dropdown">
+                <a href="index.html#works" class="dropbtn">Works</a>
+                <div class="dropdown-content">
+                    <a href="graphics.html">Graphics</a>
+                    <a href="videos.html">Videos</a>
+                    <a href="activities.html">Activities</a>
+                </div>
+            </li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+
+
+<!-- mainpage -->  
+
+    <!-- intro --> 
+
+<div class="intro" id="main">
+    
+    <h3>Hello there! I'm Seon Mi Cho</h3>
+    <h3>Welcome to my WebPage</h3>
+
+</div>
+
+
+
+    <!-- about : introduction of myself -->
+
+<div id="about">
+    <div class="text-wrap">
+        <h2>About</h2>
+        <p class="text-intro">
+           I'm a student in Korea who aims to be a UX/UI designer combining the beauty of design and coding. I love learning new things, facing new cultures, and is always trying to break my own limits. I always think of the user's experience at best. Here's more information about myself :  
+        </p>
+        <p>
+            <h4 style="color:white">Available Language : </h4> <p style="padding-left:200px">KOREAN,  ENGLISH,  JAPANESE</p>
+            <h4 style="color:white">Available Computer Language : </h4> <p style="padding-left:200px">JAVA, PYTHON, JAVASCRIPT, R, MySQL</p>
+            <h4 style="color:white">Available Tools : </h4> <p style="padding-left:200px">ADOBE PHOTOSHOP, ILLUSTRATOR, INDESIGN, PREMIERE, ANDROID STUDIO</p> 
+           
+
+        </p>       
+    </div>
+</div>
+
+
+    <!-- works : lists and images of works I've done-->
+    <!-- the image corresponding to categories : graphic, videos, activities
+        are dimmed. When you hover over the image, the image will get clearer,
+        and the corresponding keyword(category name) will pop up-->
+
+<div id="works">
+    <div class="text-wrap">
+        <h2>Works</h2>
+        <ul>
+            <li>
+                <div class="thumbnail">
+                    <a href="graphics.html">
+                        <img src="design.jpg"><div id="worktext">Graphics</div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="thumbnail">
+                    <a href="videos.html">
+                        <img src="video.jpg"><div id="worktext">Videos</div>
+                    </a>
+                </div> 
+            </li>
+            <li>
+                <div class="thumbnail">
+                    <a href="activities.html">
+                        <img src="activities.jpg"><div id="worktext">Activities</div>
+                    </a>
+                </div> 
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br><br>
+
+
+ <!-- contact : the place to immediately send a contacting message to me -->
+
+<div id="contact">
+    <div class="text-wrap">
+        <h2>Contact</h2>
+        <p class="text-intro">
+            Want to ask some questions? Don't hesitate to contact me.
+        </p>
+
+        <!--contact form : if no text is written in each input placeholder, there will be a warning ; required-->
+
+        <form>
+            <div class="input-text">
+                <label class="input-text-placeholder" for="form-name">Name</label>
+                <input type="text" id="form-name" name="form-name" required />
+            </div>
+
+            <div class="input-text">
+                <label class="input-text-placeholder" for="form-email">Email</label>
+                <input type="email" id="form-email" name="form-email" required />
+            </div>
+
+            <div class="input-text input-textarea">
+                <label class="input-text-placeholder" for="form-body">Message</label>
+                <textarea id="form-body" name="form-body" required></textarea>
+            </div>
+
+            <!--giving other methods to contact me-->
+            
+            <div class="contact-altermethod">You can also find me at +8210-4116-7601 or at chosunme96@gmail.com</div>
+            <button class="contact-button">Send email</button>
+                
+        </form>
+    </div>
+</div>
+
+
+</br>
+</br>
+<div class="footer">
+    <p>A project by Seon Mi Cho</p>
+</div>
+
+
+</body>
+</html>
+
+

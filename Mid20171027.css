@@ -1,0 +1,235 @@
+
+
+body,div,p,h1,h2,h3,h4,input,ul,li,textarea,img,header,form{
+    padding:0;
+    margin:0;
+}
+
+body,html{
+    overflow-x:hidden; 
+    overflow-y:scroll;}
+body{
+    font-family: 'Gloria Hallelujah',serif;color:white; 
+    background-image : url("background.jpg"); 
+    overflow:hidden;
+}
+
+h1,h2,h3,h4{
+    font-weight:400;
+    font-size:100%;
+}
+
+h2{font-size:60px; padding: 8px 0 5px 0; color : #7FFFD4;}
+h3{font-size:45px;}
+h4{font-size:30px; font-weight:900; color : #7FFFD4;}
+
+ul{list-style:none;}
+li{display:inline-block;}
+
+a{
+    text-decoration:none;
+    color:white;
+    text-decoration:none
+}
+a:hover{
+    color:#7FFFD4;
+} 
+
+
+
+
+/* header : menu bar */
+
+.header-wrapper{padding:35px 0;position:relative;max-width:1200px;margin:0 auto;}
+.header-main{font-size:45px;font-weight:bold;float:left;}
+.header-menu{font-size:25px; color:white; float:right;}
+.header-menu :hover{color:#7FFFD4}
+.header-menu li{margin:0 12px}
+.header-menu li a{letter-spacing:5px;}
+
+    /* dropdown of the tab 'WORKs'. */
+
+.dropbtn {
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px
+    rgba(0,0,0,0.8);
+    z-index: 1;
+}
+.dropdown-content a {
+    display: block;
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {display: block; font-size:20px;}
+
+
+
+/* mainpage */
+
+.text-wrap{max-width:1200px;margin:0 auto}
+.text-wrap p{font-size:20px;padding:0 0 20px; font-weight:300;}
+p.text-intro{font-size:28px;font-weight:400;}
+
+
+    /*intro*/
+.intro{padding:200px 0; text-align:center; max-width:1200px; margin:0 auto}
+
+
+    /* about */
+
+
+
+    /* works */
+
+.thumbnail, .thumbnail img{
+    width:350px;
+    height:60vh;
+    margin-right:20px;
+    position:relative;
+    text-align:center;
+}
+
+
+        /* if you hover over the thumbnail, the dimmed image gets clearer*/
+
+.thumbnail{
+    opacity:0.7;
+}
+
+        /* when you hover over thumbnail, keywords according to the picture will pop up*/
+#worktext{
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:45px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-weight:900;
+    color: #6A5ACD;
+}
+
+.thumbnail:hover, .thumbnail:hover #worktext{
+    display:block;
+    opacity:1.0;
+}
+
+
+
+    /* contact */
+
+
+.input-text{position:relative; margin:31px 5px 8px 5px}
+.input-text input[type=email], .input-text input[type=text],.input-textarea textarea{
+    background:white;
+    width:100%;
+    font-size:15px;
+    line-height:15px;
+    border-radius:5px;
+    padding:10px 15px;
+    border:1px solid grey;
+}
+.input-text-placeholder{font-size:20px;display:block;margin:0 0 5px 0}
+.input-textarea textarea{height:300px}
+
+.contact-altermethod{
+    font-size:18px;
+    color:grey;
+    margin:0 0 0 8px;
+    text-align:center;
+}
+.contact-button{
+    width:180px;
+    height:70px; 
+    color:black;
+    font-size:20px; 
+    font-family: 'Gloria Hallelujah',serif; 
+}
+
+button{
+    top:50%;
+    left:50%;
+}
+
+
+
+/* footer */
+
+.footer{
+    margin:50px;
+    display:block;
+    padding:0 20%;
+    text-align:center;
+    color:grey;
+}
+
+
+
+/* graphics.html design */
+
+.text-wrap h3{
+    color : #7FFFD4;
+}
+.worksheading{
+    padding:100px 0; 
+    text-align:center; 
+    max-width:1200px; 
+    margin:0 auto;
+}
+
+.imageleft, .imageright{
+    text-align : center; 
+    font-size:20px; 
+    padding-bottom:100px;
+}
+.imageleft div, .imageright div{
+    padding : 100px 20px;
+}
+.imageleft{float:left;padding-left:70px; }
+.imageright{float:right;padding-right:70px;}
+
+
+
+/* videos.html design */
+
+iframe{width:30vw; height:20vw;}
+
+.videoleft, .videoright{
+    text-align : center; 
+    font-size:20px; 
+    padding-bottom:100px;
+}
+
+.videoleft{float:left;}
+.videoright{float:right;}
+
+
+
+/*activities.html design */
+
+.activityleft p, .activityright p{
+    font-size:20px;
+    margin:auto;
+    height:35vh;
+}
+.activityright p, .activityright h4{text-align : right;}
+.activityleft p, .activityleft h4{text-align : left;}
+
+.activityleft img, .activityright img{
+    padding :0px 30px 50px 30px;
+    height:40vh;
+    width:auto;
+}
+.activityleft img{ float:left;}
+.activityright img{ float:right;}
+
